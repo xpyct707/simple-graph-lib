@@ -19,7 +19,7 @@ public class Edge<V> {
         return nonNull(vertex) && (vertex.equals(source) || vertex.equals(target));
     }
 
-    public V getOther(V vertex) {
+    public V getOtherSide(V vertex) {
         return source.equals(vertex) ? target : source;
     }
 

@@ -34,7 +34,7 @@ public class BaseGraph<V> implements Graph<V> {
     @Override
     public Edge<V> addEdge(V source, V target) {
         if (!contains(source) || !contains(target)) {
-            throw new IllegalArgumentException("Specified vertex don't belong to the graph");
+            throw new IllegalArgumentException("The specified vertex doesn't belong to the graph");
         }
         var edge = new Edge<>(source, target);
         edges.add(edge);

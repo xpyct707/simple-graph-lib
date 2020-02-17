@@ -1,0 +1,4 @@
+# Project exclude paths
+/target/
+/.idea/
+/simple-graph-lib.iml
